@@ -1,0 +1,62 @@
+/*Poznámka v CSS*/
+/*h1, h2, h3, p, ul, li*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: lightblue;
+}
+div {
+    background: yellow;
+    color: orange;
+    font-size: 30px;
+}
+.zelena {
+    background: lightgreen;
+    color: green;
+}
+.cervena {
+    background: lightcoral;
+    color: red;
+}
+#cerna {
+    background: black;
+    color: white;
+}
+#modra {
+    background: lightskyblue;
+    color: blue;
+}
+span {
+    background: blue;
+    color: white;
+}
+.text {
+    font-size: 24px;
+    background: white;
+    padding: 50px;
+    border: 10px solid orange;
+    margin: 100px;
+    padding: 10px 40px 80px 120px;
+    margin: 10px 40px 80px 120px;
+}
+b {
+    color: green;
+}
+i {
+    color: blue;
+}
+b i {
+    color: red;
+}
+.text b {
+    color: yellow;
+}
+.text i {
+    color: purple;
+}
+.text b i {
+    color: violet;
+}
+

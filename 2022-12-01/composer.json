@@ -1,0 +1,6 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "^6.6",
+        "primakurzy/hello-php": "v1.1"
+    }
+}

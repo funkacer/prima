@@ -1,0 +1,16 @@
+{
+	"name": "primakurzy/hello-php",
+	"description": "For Educational Purposes Only",
+	"type": "library",
+	"authors": [
+		{
+			"name": "Josef Kyrian",
+			"email": "josef.kyrian@primakurzy.cz"
+		}
+	],
+	"license": "MIT",
+	"require": {},
+	"autoload": {
+		"files": ["src/hello.php"]
+	}
+}

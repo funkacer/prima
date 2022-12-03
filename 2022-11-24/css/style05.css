@@ -1,0 +1,28 @@
+.tiles-container {
+    background-color: lightgray;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    height: 10px;
+    width: 10px;
+    margin: 1px;
+    background-color: cadetblue;
+}
+
+.tile.pink {
+    background-color: pink;
+}
+
+.tile.blue {
+    background-color: lightblue;
+}
+
+.tile.green {
+    background-color: lightgreen;
+}
+
+.tile.yellow {
+    background-color: lightgoldenrodyellow;
+}
