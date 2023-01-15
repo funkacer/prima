@@ -1,0 +1,14 @@
+.kolecko {
+    background-color: darksalmon;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    transition: all 1s;
+    /* all znamená všechny vlastnosti */
+}
+.kolecko.slon {
+    background-color: crimson;
+    height: 160px;
+    width: 160px;
+    border-radius: 25%;
+}

@@ -63,7 +63,21 @@
                     echo "<li> <a href = '?edit={$instance->getId()}'>{$instance->getId()}</a></li>";
                 }
             echo "</ul>";
-            
+
+            if (isset($aktualniInstance)) {
+                ?>
+    
+                <form action="" method="post">
+                    <label for="hroch">WYSIWYG editor</label>
+                    <br>
+                    <textarea name="obsah-stranky" id="hroch" cols="100" rows="20"><?php echo htmlspecialchars($aktualniInstance->getObsah()); ?></textarea>
+                    <br>
+                    <input type="submit" name="aktualizovat-submit" value="Aktualizovat">
+                </form>
+                <br>
+    
+                <?php
+            }
         } else {
             ?>
                 <form action="" method="post">
@@ -75,29 +89,6 @@
                     <input type="submit" name="login-submit" value="Prihlasit se">
                 </form>
             <?php
-        }
-
-        if (isset($aktualniInstance)) {
-            ?>
-
-            <form action="" method="post">
-                <label for="hroch">WYSIWYG editor</label>
-                <br>
-                <textarea name="obsah-stranky" id="hroch" cols="100" rows="20"><?php echo htmlspecialchars($aktualniInstance->getObsah()); ?></textarea>
-                <br>
-                <input type="submit" name="aktualizovat-submit" value="Aktualizovat">
-            </form>
-
-            <?php
-            echo "<br>";
-
-            //composer require tinymce/tinymce 5.10.6
-            
-            /*
-            if (isset($novyObsahStranky)) {
-                echo $novyObsahStranky;
-            }
-            */
         }           
     ?>
 

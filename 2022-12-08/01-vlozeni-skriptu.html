@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vložení skriptu</title>
+
+    <!-- v headu se musí přiložit defer, pak se script spusti až po načtení stránky -->
+    <!-- jina psát script až na konec stránky -->
+    <script defer>console.log('Tajná zpráva ukryá v head.');</script>
+</head>
+<body>
+
+    <!-- JS je možné psát i do atributu elementu -->
+    <!-- tento atribut spustí JS kod až poté co na element někdo klikne -->
+    <h1 onclick="console.log('Tajná zpráva ukryá v h1.')">Vložení skriptu</h1>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur tempore officiis fugiat id sit nesciunt suscipit, nobis laboriosam mollitia repudiandae ab ducimus ex dolorem velit repellat minima facilis amet ipsam animi a. Iure, autem. Minima maxime laboriosam, amet harum officia ratione et iste. Aspernatur aliquid enim possimus earum dolorum ducimus.</p>
+
+    <!-- skripty je vždy dobré psát na konec stránky -->
+
+    <!-- středníky nemusí být u příkazů na samostatné řádce, ale je lepší je psát -->
+
+    <script>
+        //vše co píšeme mezi tag script je JavaScript
+        /* víceřádkový komentář
+        alert("Toto je alert");
+        */
+        console.log('Tajná zpráva ukryá v script.');console.log('Tajná zpráva ukryá v script.');
+    </script>
+    <!-- pokud je script delší tak je výhodnější použít externí soubor -->
+    <script src="./js/main01.js"></script>
+    
+</body>
+</html>

@@ -1,12 +1,9 @@
-backlash \ altgr+q
-apostrof ' shift + ¨
-dollar $ altgr + ů
-ampersant & altgr + c
-pipeline | altgr + w
-[ altgr + f
-] altgr + g
-{ altgr + b
-} altgr + n
-hash # altgr + x
-@ altgr + v
-^ altgr + š + mezera
+\ (alt gr + Q)
+' (shift + ¨)
+$ (alt gr + ů)
+& (alt gr + C)
+| (alt gr + W)
+[ (alt gr + F)
+] (alt gr + G)
+^ (alt gr + š)
+` (alt gr + ý)

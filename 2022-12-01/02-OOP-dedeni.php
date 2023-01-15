@@ -79,6 +79,13 @@
         echo "<br />";
 
 
+        /*
+        public - the property or method can be accessed from everywhere. This is default
+        protected - the property or method can be accessed within the class and by classes derived from that class (ale nelze je měnit zvenčí)
+        private - the property or method can ONLY be accessed within the class
+        (a na zděděných lze tudíž vytvořit znovu)
+        */
+
         //vlastnosti jde i měnit
         //ale jen pokud je vlastnost public
         //private vlastnost nelze měnit mimo classu!!!
@@ -90,15 +97,14 @@
         echo "$ucitel->jmeno";
 
         echo "$ucitel->id";
-        //pozor toto vytvoří nový klíč typu public, protože to private id je na uzivateli
+        //pozor toto vytvoří nový klíč typu public, protože to protected id je na uzivateli (protected $id;)
         $ucitel->id = 2;
         echo $ucitel->id;
 
-        /* tohle totiž normálně jde
+        // tohle totiž normálně jde
         $ucitel->cosi = 222;
         echo $ucitel->cosi;
-        */
-
+        
         var_dump($ucitel);
         
     ?>

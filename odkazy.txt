@@ -1,3 +1,22 @@
 https://coggle.it/diagram/XfeRbWj7xy3dsEX8/t/web-development-in-2020
 https://validator.w3.org/
 https://haveibeenpwned.com/
+https://www.tiny.cloud/
+https://github.com/ChangemakerStudios/Papercut-SMTP
+https://github.com/PrimaKurzy-cz
+https://getcomposer.org/
+https://github.com/PHPMailer/PHPMailer
+https://draw.io
+https://www.w3schools.com/sql/default.asp
+
+http://localhost/phpmyadmin/
+//windows uzivtaelkse jmeno: root
+//mac uzivatelske jmeno: root, heslo: root
+
+https://www.youtube.com/watch?v=D-eOBnjxcy8
+https://www.w3schools.com/jsref/dom_obj_event.asp
+https://www.javascripttutorial.net/javascript-fetch-api/
+https://randomuser.me
+https://github.com/dimsemenov/photoswipe
+
+https://drive.google.com/drive/folders/0BxptXtDyPw7dbWhYclJ4Q3Y1NTA?resourcekey=0-yab6KQC048Wp1YiXvCwxvw&usp=share_link

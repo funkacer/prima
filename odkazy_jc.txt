@@ -1,0 +1,15 @@
+https://coggle.it/diagram/XfeRbWj7xy3dsEX8/t/web-development-in-2020
+https://validator.w3.org/
+https://haveibeenpwned.com/
+
+https://fontawesome.com/
+Start for free
+Other Ways to Use
+Downloads
+Free for web
+Zkopírovat do css:
+/Users/cerny/Downloads/fontawesome-free-6.2.1-web/css/all.min.css
+Zkopírovat do složky webové aplikace celý adresář
+/Users/cerny/Downloads/fontawesome-free-6.2.1-web/webfonts
+Najít ikonu s tahem free, zkopírovat html:
+<i class="fa-solid fa-arrows-rotate"></i>

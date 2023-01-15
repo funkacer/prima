@@ -1,0 +1,16 @@
+nainstalovat vscode
+(Nakonec + Extensions: open php, php intelliphence a php debug a mysql by Weijan Chen)
+nainstalovat mamp, php v8
+nainstalovat brew install composer
+nastavit xdebug:
+/Applications/MAMP/bin/php/php8.0.8/conf/php.ini
+do tohoto souboru na konec přidat:
+[XDebug]
+zend_extension=xdebug
+xdebug.mode=debug,develop
+xdebug.start_with_request=yes
+
+[PHP]
+output_buffering=off
+implicit_flush=on
+
