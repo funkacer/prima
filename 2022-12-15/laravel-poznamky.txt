@@ -1,0 +1,103 @@
+//prezentace
+https://drive.google.com/drive/folders/0BxptXtDyPw7dbWhYclJ4Q3Y1NTA?resourcekey=0-yab6KQC048Wp1YiXvCwxvw&usp=share_link
+
+
+//global = stáhnout do celého počítače
+
+composer global require laravel/installer
+
+
+//na macu
+
+https://ralphjsmit.com/fix-laravel-command-not-found
+
+
+//vytvoří nový projekt
+
+laravel new zoo
+
+
+//ve slozce zoo pres terminal
+
+php artisan serve
+
+//nebo přes xampp ./public/index.php
+
+//ve složce ./resources/views smazat obsah welcome.blade.php
+
+//ve vscode stáhnout laravel blade snippets od winnie lin
+
+//v ./routes/web.php definujeme proměnné
+Route::get('/', function () {
+    $poleDat = [
+        "datum" => date("d.m.Y"),
+        "pocetNavstevniku" => 2057,
+        "zvireDne" => "Koala"
+    ];
+    return view('welcome', $poleDat);
+})->name('homepageRoute');
+
+
+//ve ./views vytvoříme kontakt.blade.php
+
+<a href="{{route('homepageRoute')}}">Zpět na homepage</a>
+
+//pak v ./routes/web.php definujeme novou stránku
+
+Route::get('kontakt', function () {
+    return view('kontakt');
+})->name('contactRoute');
+
+//.env je konfigurační soubor, kde nastavíme přístup do databáze
+//databázi musíme napřed vytvořit ručně!!
+//nesmí tam být mezery!!
+//localhost = 127.0.0.1
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=zoo
+DB_USERNAME=root
+DB_PASSWORD=
+
+// podklady pro databáze jsou ve složce./database/migrations
+//toto namigruje soubory ve složce
+php artisan migrate
+
+//vygeneruje vlastní soubor migrace
+php artisan make:migration create_table_zvire --create=zvire
+
+//id() je autoincrement, timestamps() jsou 2 sloupčky kdy záznam vytvořen / upraven
+//upravit soubor .\database\migrations\2022_12_15_111334_create_table_zvire.php
+//->nullable(); //musí být ()
+Schema::create('zvire', function (Blueprint $table) {
+    $table->id();
+    $table->string("jmeno"); //VARCHAR255
+    $table->integer("cislo_vybehu")->default(0); //INT, default 0
+    $table->text("popis")->nullable(); //TEXT muze byt NULL
+    $table->boolean("je_zivy"); //TINYINT
+    $table->timestamps();
+});
+
+//aktualizovat db
+php artisan migrate
+
+//lze i upravovat
+$table->string("pohlavi")->nullable(); //přidáno
+
+//aktualizovat db, ale pozor, tohle smaže tabulky a vytvoří je znova!!!
+php artisan migrate:refresh
+
+//pro přidání sloupečku později se udělá nový migrační soubor který přidá sloupec, pak zase
+php artisan migrate
+
+//vložit data
+use Illuminate\Support\Facades\DB;
+DB::table("zvire")->insert([
+            "jmeno"=>"slon",
+            "cislo_vybehu"=> 7,
+            "popis" => "Toto je slon africký, může vážit až 6 tun.",
+            "je_zivy" => true
+        ]);
+
+//aktualizovat db, ale pozor, tohle smaže tabulky a vytvoří je znova!!!
+php artisan migrate:refresh
